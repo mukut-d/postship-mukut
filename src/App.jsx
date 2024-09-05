@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { colors } from "./constants/colors";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <div
+        className="header"
+        style={{
+          backgroundColor: "#ccc",
+          flexDirection: "row",
+          display: "flex",
+          borderBottomWidth: 1,
+          borderBottomColor: colors.black,
+          padding: 10,
+          margin: 10,
+        }}
+      >
+        <span>Home</span>
+        <span>Orders</span>
+        <span>Integrations</span>
+        <div>
+          <span>Tracking Page</span>
 
-export default App
+          {/* <img src={images.arrow} className="arrow" /> */}
+        </div>
+        <span style={{ display: "flex", flex: "1" }}>Partner with Us</span>
+        <div>
+          <span>Search</span>
+        </div>
+        <div>
+          <span>Account</span>
+        </div>
+        <div>
+          <span>Settings</span>
+        </div>
+      </div>
+      <div>
+        <span>hii</span>
+      </div>
+    </>
+  );
+};
+
+export default App;
