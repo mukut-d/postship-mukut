@@ -6,6 +6,9 @@ import Card from "./components/Card/Card";
 import calendar from "../src/assets/images/calendar.png";
 import save from "../src/assets/images/tray.png";
 import eye from "../src/assets/images/eye.png";
+import danger from "../src/assets/images/warning.png";
+import info from "../src/assets/images/info.png";
+import Button from "./components/Button";
 
 const App = () => {
   return (
@@ -29,8 +32,21 @@ const App = () => {
           }}
         >
           <Card />
-          <Card />
-          <Card />
+          <Card
+            backgroundColor={colors.yellow100}
+            Icon={danger}
+            title="Customize Customer Notification"
+            subtitle="Tailor Your Email Experience: Set the Sender Email and Choose Notification Triggers"
+            buttonText2="Configure Notifications"
+          />
+          <Card
+            backgroundColor={colors.blue100}
+            Icon={info}
+            title="Your Tracking Link has been generated"
+            subtitle="Include the Link to Your Store's Navigation Menu."
+            buttonText2="Go To Navigation Menu"
+            buttonText1="Copy Link"
+          />
         </div>
         <div
           style={{
@@ -71,17 +87,18 @@ const App = () => {
           <div
             style={{
               marginTop: 40,
-              backgroundColor: "#ccc",
               display: "flex",
               gap: 10,
             }}
           >
             <div
               style={{
-                backgroundColor: "red",
+                backgroundColor: colors.white,
                 display: "flex",
                 flexDirection: "column",
                 flex: 1,
+                padding: 20,
+                borderRadius: 15,
               }}
             >
               <div style={{ display: "flex" }}>
@@ -97,9 +114,10 @@ const App = () => {
                 backgroundColor: colors.orange,
                 color: colors.white,
                 width: "10vw",
-                height: "40vh",
+                // height: "40vh",
                 padding: 20,
                 borderRadius: 15,
+                paddingRight: 40,
               }}
             >
               <span style={{ fontSize: 14 }}>
@@ -117,16 +135,7 @@ const App = () => {
                   The maximum chargebacks are from Miami.
                 </p>
               </p>
-              <button
-                style={{
-                  borderRadius: 5,
-                  padding: 5,
-                  alignSelf: "flex-end",
-                  borderStyle: "none",
-                }}
-              >
-                Check Orders Page
-              </button>
+              <Button title="Check Orders Page" mode={"light"} />
             </div>
             <div
               style={{
@@ -196,16 +205,139 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div style={{ paddingLeft: 50, paddingRight: 50, paddingTop: 30 }}>
-          <h3>Discover the Heart of Our Functionality</h3>
-          <div>
-            <span>card 1</span>
-          </div>
-          <div>
-            <span>card 2</span>
-          </div>
-          <div>
-            <span>card 3</span>
+        <div
+          style={{
+            paddingLeft: 50,
+            paddingRight: 50,
+            paddingTop: 30,
+            backgroundColor: colors.orangeLight,
+          }}
+        >
+          <span style={{ fontSize: 24, color: colors.black }}>
+            Discover the Heart of Our Functionality
+          </span>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: 20,
+              marginTop: 20,
+            }}
+          >
+            <div
+              style={{
+                width: "25vw",
+                //  backgroundColor: "#ccc",
+                padding: 20,
+                borderRadius: 10,
+                boxShadow: "2px 2px 6px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              <span style={{ fontSize: 14, color: colors.black }}>
+                Elevate Your Brand Aesthetics with Custom Tracking Page Styles
+              </span>
+              <p style={{ fontSize: 13, color: colors.black }}>
+                Immerse your customers in a branded experience by personalizing
+                the colors on your tracking page.
+              </p>
+              <div style={{ marginTop: 20 }}>
+                <span>Accent Color</span>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    gap: 20,
+                    marginTop: 10,
+                  }}
+                >
+                  <input
+                    style={{
+                      flex: 1,
+                      borderRadius: 10,
+                      borderStyle: "solid",
+                      borderWidth: 0.6,
+                      borderColor: colors.grey,
+                    }}
+                  />
+                  <div
+                    style={{
+                      backgroundColor: colors.red200,
+                      width: 60,
+                      height: 30,
+                      borderRadius: 10,
+                    }}
+                  ></div>
+                </div>
+              </div>
+              <div style={{ marginTop: 20 }}>
+                <span>Text Color</span>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    gap: 20,
+                    marginTop: 10,
+                  }}
+                >
+                  <input
+                    style={{
+                      flex: 1,
+                      borderRadius: 10,
+                      borderStyle: "solid",
+                      borderWidth: 0.6,
+                      borderColor: colors.grey,
+                    }}
+                  />
+                  <div
+                    style={{
+                      backgroundColor: colors.red300,
+                      width: 60,
+                      height: 30,
+                      borderRadius: 10,
+                    }}
+                  ></div>
+                </div>
+              </div>
+              <div style={{ marginTop: 20 }}>
+                <span>Background Color</span>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    gap: 20,
+                    marginTop: 10,
+                  }}
+                >
+                  <input
+                    style={{
+                      flex: 1,
+                      borderRadius: 10,
+                      borderStyle: "solid",
+                      borderWidth: 0.6,
+                      borderColor: colors.grey,
+                    }}
+                  />
+                  <div
+                    style={{
+                      backgroundColor: colors.red100,
+                      width: 60,
+                      height: 30,
+                      borderRadius: 10,
+                    }}
+                  ></div>
+                </div>
+              </div>
+              <div style={{ marginTop: 20 }}>
+                <Button title={"Preview"} mode="light" />
+                <Button title={"Apply Colors"} />
+              </div>
+            </div>
+            <div style={{ display: "flex", flex: 1 }}>
+              <span>card 2</span>
+            </div>
+            <div style={{ width: "30vw", backgroundColor: "#ccc" }}>
+              <span>card 3</span>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,9 @@
 import { colors } from "../../constants/colors";
 import { styles } from "./styles";
+import arrow from "../../assets/images/arrow.png";
+import search from "../../assets/images/search.png";
+import settings from "../../assets/images/settings.png";
+import user from "../../assets/images/user.png";
 
 const Header = () => {
   const navPartner = { ...styles.navTitle };
@@ -31,7 +35,7 @@ const Header = () => {
           Tracking Page
         </span>
 
-        {/* <img src={images.arrow} className="arrow" /> */}
+        <img src={arrow} height={"5"} width={"10"} className="arrow" />
       </div>
       <span className="navItem" style={navPartner}>
         Partner with Us
@@ -41,18 +45,24 @@ const Header = () => {
           borderBottomWidth: 1,
           borderBottomStyle: "solid",
           paddingBottom: 5,
+          marginRight: 15,
         }}
       >
-        <span className="navItem" style={styles.navTitle}>
-          Search
-        </span>
+        <img src={search} height={"13"} width={"13"} />
+        <input
+          className="navItem"
+          style={styles.navTitle}
+          placeholder="Search"
+        />
       </div>
-      <div>
+      <div style={{ marginleft: 15, marginRight: 15 }}>
+        <img src={user} height={"13"} width={"13"} />
         <span className="navItem" style={styles.navTitle}>
           Account
         </span>
       </div>
-      <div>
+      <div style={{ marginleft: 15, marginRight: 15 }}>
+        <img src={settings} height={"13"} width={"13"} />
         <span className="navItem" style={styles.navTitle}>
           Settings
         </span>

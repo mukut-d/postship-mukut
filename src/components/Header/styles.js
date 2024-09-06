@@ -21,6 +21,7 @@ export const styles = {
     color: colors.black,
     paddingLeft: 10,
     paddingRight: 10,
+    borderStyle: "none",
   },
   line: {
     marginLeft: 10,
