@@ -327,7 +327,9 @@ const App = () => {
                   ></div>
                 </div>
               </div>
-              <div style={{ marginTop: 20 }}>
+              <div
+                style={{ marginTop: 20, gap: 10, display: "flex", padding: 10 }}
+              >
                 <Button title={"Preview"} mode="light" />
                 <Button title={"Apply Colors"} />
               </div>
@@ -335,8 +337,48 @@ const App = () => {
             <div style={{ display: "flex", flex: 1 }}>
               <span>card 2</span>
             </div>
-            <div style={{ width: "30vw", backgroundColor: "#ccc" }}>
-              <span>card 3</span>
+            <div
+              style={{
+                width: "30vw",
+                backgroundColor: "#ccc",
+                paddingLeft: 20,
+                paddingTop: 20,
+              }}
+            >
+              <span>Seamlessly Integrate Custom HTML Elements</span>
+              <p style={{ paddingRight: 40 }}>
+                Unleash creativity with our Custom HTML feature. Add links,
+                custom messages, or any HTML content to elevate the tracking
+                page experience for your customers.
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: 20,
+                  marginRight: 20,
+                }}
+              >
+                <span style={{ paddingTop: 20, paddingBottom: 20 }}>
+                  HTML Link
+                </span>
+                <input
+                  type="text"
+                  placeholder="Value"
+                  style={{
+                    height: "160px",
+                    textAlign: "initial",
+                    borderRadius: 10,
+                    borderStyle: "solid",
+                    borderWidth: 0.6,
+                    borderColor: colors.grey,
+                  }}
+                />
+              </div>
+              <div style={{ marginTop: 20, gap: 10, display: "flex" }}>
+                <Button title={"Preview"} mode="light" />
+                <Button title={"Apply Colors"} />
+              </div>
             </div>
           </div>
         </div>
