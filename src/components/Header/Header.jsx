@@ -34,9 +34,7 @@ const Header = () => {
       <span className="navItem" style={navPartner}>
         Partner with Us
       </span>
-      <div
-        style={styles.search}
-      >
+      <div style={styles.search}>
         <img src={search} height={"13"} width={"13"} />
         <input
           className="navItem"

@@ -18,7 +18,8 @@ const Card = ({
   let light;
   if (buttonMode1 == "dark" || buttonMode2 == "dark") {
     dark = {
-      width: "50%",
+      width: "10vw",
+      height: "4vh",
       padding: 5,
       marginLeft: 5,
       borderRadius: 10,
@@ -29,7 +30,8 @@ const Card = ({
     };
   } else {
     light = {
-      width: "30%",
+      width: "10vw",
+      height: "40vh",
       padding: 5,
       borderStyle: "none",
       borderRadius: 10,
@@ -37,8 +39,7 @@ const Card = ({
       color: colors.black100,
       fontSize: 12,
       marginRight: 5,
-      fontSize: 12,
-      fontFamily: "Inter500",
+      boxShadow: "2px 2px 6px rgba(0, 0, 0, 0.2)",
     };
   }
   return (
@@ -54,11 +55,16 @@ const Card = ({
 
       <div style={styles.btnContainer}>
         {!!buttonText1 && (
-          <button className="card" style={light}>
-            {buttonText1}
-          </button>
+          <Button
+            title={buttonText1}
+            mode="light"
+            className={"card"}
+            style={light}
+          />
         )}
-        {!!buttonText2 && <button style={dark}>{buttonText2}</button>}
+        {!!buttonText2 && (
+          <Button title={buttonText2} className={"card"} style={dark} />
+        )}
       </div>
     </div>
   );

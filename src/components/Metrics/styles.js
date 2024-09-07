@@ -8,6 +8,11 @@ export const styles = {
     paddingBottom: 40,
     paddingTop: 30,
   },
+  rootContainer: {
+    marginTop: 40,
+    display: "flex",
+    gap: 10,
+  },
   title: { fontFamily: "Inter700", fontSize: 24, color: colors.black },
   tab1: {
     padding: 10,
@@ -39,6 +44,7 @@ export const styles = {
     flex: 1,
     padding: 20,
     borderRadius: 15,
+    boxShadow: "2px 2px 6px rgba(0, 0, 0, 0.2)",
   },
   orderContainer: { display: "flex" },
   order: {
@@ -82,6 +88,7 @@ export const styles = {
     padding: 20,
     backgroundColor: colors.white,
     borderRadius: 10,
+    boxShadow: "2px 2px 6px rgba(0, 0, 0, 0.2)",
   },
   trackingTitle: { fontSize: 14, color: colors.black, fontFamily: "Inter600" },
   trackingSubtitle: {

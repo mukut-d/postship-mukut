@@ -3,7 +3,7 @@ import { colors } from "../constants/colors";
 export const styles = {
   dark: {
     borderRadius: 5,
-    padding: 5,
+    padding: 6,
     marginTop: 30,
     borderStyle: "none",
     fontSize: 12,
@@ -13,7 +13,7 @@ export const styles = {
   },
   light: {
     borderRadius: 5,
-    padding: 5,
+    padding: 6,
     marginTop: 30,
     borderStyle: "none",
     borderColor: colors.grey,
@@ -21,7 +21,7 @@ export const styles = {
     fontSize: 12,
     backgroundColor: colors.white,
     color: colors.black,
-    boxShadow: "0px 0.5px 0px 0.5px",
+    boxShadow: "2px 2px 6px rgba(0, 0, 0, 0.2)",
     fontFamily: "Inter500",
     fontWeight: 550,
   },

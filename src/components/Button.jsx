@@ -1,9 +1,18 @@
 import { styles } from "./styles";
 
-const Button = ({ title, mode = "dark" }) => {
+const Button = ({ className = null, title, mode = "dark", style }) => {
   console.log(mode);
   return (
-    <button style={mode == "dark" ? styles.dark : styles.light}>{title}</button>
+    <button
+      className={className}
+      style={
+        mode == "dark"
+          ? { ...styles.dark, ...style }
+          : { ...styles.light, ...style }
+      }
+    >
+      {title}
+    </button>
   );
 };
 

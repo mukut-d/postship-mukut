@@ -108,5 +108,8 @@ export const styles = {
     fontFamily: "Inter400",
     fontSize: 14,
     color: colors.black100,
+    padding: 10,
+    backgroundColor: "#ccc",
+    verticalAlign: "text-top",
   },
 };

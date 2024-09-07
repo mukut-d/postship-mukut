@@ -29,11 +29,7 @@ const Metrics = () => {
         </div>
       </div>
       <div
-        style={{
-          marginTop: 40,
-          display: "flex",
-          gap: 10,
-        }}
+        style={styles.rootContainer}
       >
         <div style={styles.titleContainer}>
           <div style={styles.orderContainer}>

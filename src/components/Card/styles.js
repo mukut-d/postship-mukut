@@ -14,6 +14,7 @@ export const styles = {
     // borderStyle: "solid",
     marginRight: 7.5,
     marginLeft: 7.5,
+    boxShadow: "2px 2px 6px rgba(0, 0, 0, 0.2)",
   },
   title: {
     alignItems: "center",
@@ -34,7 +35,8 @@ export const styles = {
   btnContainer: {
     display: "flex",
     marginTop: 15,
-    height: "25%",
+
     paddingLeft: 10,
+    // backgroundColor: "#ccc",
   },
 };
