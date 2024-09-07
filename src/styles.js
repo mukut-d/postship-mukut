@@ -9,6 +9,15 @@ export const styles = {
     paddingLeft: 50,
     paddingRight: 50,
   },
+  tab1: {
+    padding: 10,
+    backgroundColor: colors.white,
+    marginRight: 5,
+    borderRadius: 10,
+    fontFamily: "Inter600",
+    fontSize: 13,
+    color: colors.black,
+  },
   tab: {
     backgroundColor: colors.white,
     padding: 12,
@@ -19,5 +28,8 @@ export const styles = {
     justifyContent: "center",
     alignItems: "center",
     gap: 10,
+    fontFamily: "Inter600",
+    fontSize: 13,
+    color: colors.black,
   },
 };

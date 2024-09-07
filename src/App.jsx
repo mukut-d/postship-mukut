@@ -8,7 +8,14 @@ import save from "../src/assets/images/tray.png";
 import eye from "../src/assets/images/eye.png";
 import danger from "../src/assets/images/warning.png";
 import info from "../src/assets/images/info.png";
+import paypal from "../src/assets/images/paypal.png";
+import logo1 from "../src/assets/images/logo1.png";
+import logo2 from "../src/assets/images/logo2.png";
+import logo3 from "../src/assets/images/logo3.png";
+import logo4 from "../src/assets/images/logo4.png";
 import Button from "./components/Button";
+import { PieChart } from "@mui/x-charts";
+import Chart from "./components/Chart";
 
 const App = () => {
   return (
@@ -61,12 +68,7 @@ const App = () => {
           <div style={{ display: "flex", marginBottom: 20 }}>
             <span
               className="tab"
-              style={{
-                padding: 10,
-                backgroundColor: colors.white,
-                marginRight: 5,
-                borderRadius: 10,
-              }}
+              style={styles.tab}
             >
               Lifetime
             </span>
@@ -107,7 +109,66 @@ const App = () => {
                 </span>
                 <span>Total Orders : 394</span>
               </div>
-              <div>Chart content here</div>
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <span
+                  style={{
+                    fontSize: 13,
+                    color: colors.black,
+                    marginTop: 20,
+                    marginBottom: 20,
+                    marginLeft: 10,
+                    marginRight: 10,
+                    backgroundColor: colors.yellow100,
+                    padding: 10,
+                  }}
+                >
+                  Delivered
+                </span>
+
+                <span
+                  style={{
+                    fontSize: 13,
+                    color: colors.black,
+                    marginTop: 20,
+                    marginBottom: 20,
+                    marginLeft: 10,
+                    marginRight: 10,
+                    backgroundColor: colors.white200,
+                    padding: 10,
+                  }}
+                >
+                  Out for delivery
+                </span>
+                <span
+                  style={{
+                    fontSize: 13,
+                    color: colors.black,
+                    marginTop: 20,
+                    marginBottom: 20,
+                    marginLeft: 10,
+                    marginRight: 10,
+                    backgroundColor: colors.white200,
+                    padding: 10,
+                  }}
+                >
+                  In-transit
+                </span>
+                <span
+                  style={{
+                    fontSize: 13,
+                    color: colors.black,
+                    marginTop: 20,
+                    marginBottom: 20,
+                    marginLeft: 10,
+                    marginRight: 10,
+                    backgroundColor: colors.white200,
+                    padding: 10,
+                  }}
+                >
+                  Pending
+                </span>
+              </div>
+              <Chart />
             </div>
             <div
               style={{
@@ -334,8 +395,55 @@ const App = () => {
                 <Button title={"Apply Colors"} />
               </div>
             </div>
-            <div style={{ display: "flex", flex: 1 }}>
-              <span>card 2</span>
+            <div
+              style={{
+                display: "flex",
+                flex: 1,
+                flexDirection: "column",
+                paddingBottom: 20,
+              }}
+            >
+              <div
+                style={{
+                  boxShadow: "2px 2px 2px 1px",
+                  borderRadius: 15,
+                  marginBottom: 20,
+                  padding: 20,
+                }}
+              >
+                <span style={{ fontSize: 14, color: colors.black }}>
+                  Exclusive Onboarding Support for High-Volume Brands
+                </span>
+                <p style={{ fontSize: 13, color: colors.black }}>
+                  Unlock personalized guidance! Book a one-on-one onboarding
+                  call to streamline your experience.
+                </p>
+                <Button title={"Schedule A Call"} />
+              </div>
+              <div
+                style={{
+                  boxShadow: "2px 2px 2px 1px",
+                  borderRadius: 15,
+                  marginBottom: 20,
+                  padding: 20,
+                }}
+              >
+                <span style={{ fontSize: 14, color: colors.black }}>
+                  Explore Our Integrated Ecosystem
+                </span>
+                <p style={{ fontSize: 13, color: colors.black }}>
+                  Discover a variety of popular integrations tailored for your
+                  convenience.
+                </p>
+                <div style={{ display: "flex", flexDirection: "row", gap: 30 }}>
+                  <img src={paypal} height={"35"} width={"35"} />
+                  <img src={logo1} height={"35"} width={"35"} />
+                  <img src={logo2} height={"35"} width={"35"} />
+                  <img src={logo3} height={"35"} width={"35"} />
+                  <img src={logo4} height={"35"} width={"35"} />
+                </div>
+                <Button title={"Explore Integrations"} />
+              </div>
             </div>
             <div
               style={{
@@ -367,7 +475,6 @@ const App = () => {
                   placeholder="Value"
                   style={{
                     height: "160px",
-                    textAlign: "initial",
                     borderRadius: 10,
                     borderStyle: "solid",
                     borderWidth: 0.6,

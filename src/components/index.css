@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Inter400";  
+  src: local("Inter400"),
+    url("../assets/fonts/Inter400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter500";  
+  src: local("Inter500"),
+    url("../assets/fonts/Inter500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter600";  
+  src: local("Inter600"),
+    url("../assets/fonts/Inter600.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter700";  
+  src: local("Inter700"),
+    url("../assets/fonts/Inter700.ttf") format("truetype");
+}
+
 .card {
   box-shadow: 1px 1px 1px 1px grey;
 }
