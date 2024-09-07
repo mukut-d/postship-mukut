@@ -12,13 +12,7 @@ const Header = () => {
 
   return (
     <div className="header" style={styles.root}>
-      <div
-        style={{
-          flexDirection: "column",
-          justifyContent: "center ",
-          alignItems: "center",
-        }}
-      >
+      <div style={styles.navContainer}>
         <span className="navItem" style={styles.navTitle}>
           Home
         </span>
@@ -41,12 +35,7 @@ const Header = () => {
         Partner with Us
       </span>
       <div
-        style={{
-          borderBottomWidth: 1,
-          borderBottomStyle: "solid",
-          paddingBottom: 5,
-          marginRight: 15,
-        }}
+        style={styles.search}
       >
         <img src={search} height={"13"} width={"13"} />
         <input

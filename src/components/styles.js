@@ -9,6 +9,7 @@ export const styles = {
     fontSize: 12,
     backgroundColor: colors.black100,
     color: colors.white,
+    fontFamily: "Inter500",
   },
   light: {
     borderRadius: 5,
@@ -21,5 +22,7 @@ export const styles = {
     backgroundColor: colors.white,
     color: colors.black,
     boxShadow: "0px 0.5px 0px 0.5px",
+    fontFamily: "Inter500",
+    fontWeight: 550,
   },
 };

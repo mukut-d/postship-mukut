@@ -25,6 +25,7 @@ const Card = ({
       backgroundColor: colors.black100,
       color: colors.white,
       fontSize: 12,
+      fontFamily: "Inter500",
     };
   } else {
     light = {
@@ -36,6 +37,8 @@ const Card = ({
       color: colors.black100,
       fontSize: 12,
       marginRight: 5,
+      fontSize: 12,
+      fontFamily: "Inter500",
     };
   }
   return (

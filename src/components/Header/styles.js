@@ -14,9 +14,13 @@ export const styles = {
     paddingLeft: 50,
     paddingRight: 50,
   },
+  navContainer: {
+    flexDirection: "column",
+    justifyContent: "center ",
+    alignItems: "center",
+  },
   navTitle: {
-    fontFamily: "Inter",
-    fontWeight: 650,
+    fontFamily: "Inter600",
     fontSize: 14,
     color: colors.black,
     paddingLeft: 10,
@@ -29,5 +33,11 @@ export const styles = {
     height: 1.5,
     width: 30,
     backgroundColor: colors.purple,
+  },
+  search: {
+    borderBottomWidth: 1,
+    borderBottomStyle: "solid",
+    paddingBottom: 5,
+    marginRight: 15,
   },
 };

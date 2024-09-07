@@ -21,9 +21,12 @@ export const styles = {
     flexDirection: "row",
     gap: 10,
     paddingLeft: 10,
+    fontFamily: "Inter600",
+    fontSize: 14,
+    color: colors.black,
   },
   subtitle: {
-    fontWeight: 450,
+    fontFamily: "Inter400",
     fontSize: 13,
     color: colors.black,
     paddingLeft: 10,
