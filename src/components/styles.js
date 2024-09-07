@@ -25,4 +25,5 @@ export const styles = {
     fontFamily: "Inter500",
     fontWeight: 550,
   },
+  chart: { display: "flex", flex: 1 },
 };

@@ -65,7 +65,7 @@ export const styles = {
     display: "flex",
     flex: 1,
     flexDirection: "column",
-    paddingBottom: 20,
+    paddingBottom: 10,
   },
   exclusiveContainer: {
     boxShadow: "2px 2px 6px rgba(0, 0, 0, 0.2)",
@@ -109,7 +109,7 @@ export const styles = {
     fontSize: 14,
     color: colors.black100,
     padding: 10,
-    backgroundColor: "#ccc",
+
     verticalAlign: "text-top",
   },
 };

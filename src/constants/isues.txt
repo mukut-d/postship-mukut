@@ -1,2 +1,5 @@
-install images
-make card configurable
+install images - done
+make card configurable - done
+
+not able to make labell bottom
+not able to textAlignVertical vertical top - value
